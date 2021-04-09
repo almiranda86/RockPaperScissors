@@ -91,7 +91,7 @@ namespace RockPaperScissors.Domain
             var chosenOne = Options.Find(x => x.key == chosenOption);
             var newDefeatOne = Options.Find(x => x.key == newDefeatOption);
 
-            if (isAddNew)
+            if (!isAddNew)
             {
                 chosenOne.defeats.Clear();
             }
